@@ -41,12 +41,13 @@
   $ git config --list // current parameters
   $ git config --global user.name ""
   $ git config --global user.email ""
-  $ git config user.name // parameter by key 
+  $ git config user.name // parameter by key
 
   $ git init 'folder'
   $ git add README.md
-  $ git commit -m "first commit" 
-  - .gitignore -> VSCode
+  $ git commit -m "first commit"
+
+- .gitignore -> VSCode
     *.txt // This would add all .txt files
     directory/ // This will ignore a directory
 
@@ -56,15 +57,15 @@
     $ git pull // Receive changes from remote repository
 
   Create repository on GitHub:
-    $ git remote add origin https://github.com/accountname/Reponame.git
+    $ git remote add origin <https://github.com/accountname/Reponame.git>
     $ git push -u origin master
 
   Existing repository to GitHub:
-    $ git remote add origin https://github.com/accountname/Reponame.git
+    $ git remote add origin <https://github.com/accountname/Reponame.git>
     $ git push -u origin master
 
   Cloning repository from GitHub:
-    $ git clone https://github.com/accountname/Reponame.git
+    $ git clone <https://github.com/accountname/Reponame.git>
 
   Branch & Merge:
     $ git branch // Checks branches *actual branch
@@ -96,7 +97,7 @@
   $ git log
   $ gitk // log 2.0
 
-2) Install and test Node.JS & npm: https://nodejs.org/en/
+2) Install and test Node.JS & npm: <https://nodejs.org/en/>
   $ node --version -> Checking successful installation
   $ node file.js -> Use node to run the .js code on the computer (not web-browser).
   $ node -> Enter to the REPL (Developer Tools console in terminal)
@@ -110,14 +111,14 @@
       .load -> Load JS from a file into the REPL session
       .save -> Save all evaluated commands in this REPL session to a file
     Press (double-)Ctrl+C to abort current expression, Ctrl+D (or .exit) to exit the REPL
-    
+
     > Use double-TAB when started to write JS keywords and/or . with that.
     > clear -> Clears the console
 
   Look for packages on the npmjs.com site
-    
-    $ npm i --save superheroes
-    $ npm i --save supervillains
+
+    npm i --save superheroes
+    npm i --save supervillains
   
   Use npm init to create a package.json file in the project directory.
     $ npm init -> install
@@ -160,7 +161,7 @@
       $ npx tsc --init
       - tsconfig.json
       $ tsc script --target es5 --inlineSourceMap --watch --allowJs --resolveJsonModule --esModuleInterop
-	  
+   
     - Firebase
       $ npm i -g firebase-tools
       $ npm i -D firebase
